@@ -4,7 +4,7 @@
 
 [![Preview](preview/hutempl.png)](https://ckassung.github.io/hutempl/)
 
-**A package of templates in line with the corporate design of [HU Berlin](https://www.hu-berlin.de).**
+**A package of LaTeX templates in line with the corporate design of [HU Berlin](https://www.hu-berlin.de).**
 
 ---
 
