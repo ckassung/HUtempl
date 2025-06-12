@@ -1,0 +1,36 @@
+\documentclass[signature,print,scrlttr2]{huletter}
+
+\name{Prof.\,Dr.\ Christian Kassung}
+% \date{1.3.1999}
+% \subject{}
+% \processor{}
+% \reference{}
+
+
+\begin{document}
+
+\begin{letter}{%
+  An\\
+  Vorname Name\\
+  Straße und Hausnummer\\
+  ORT}
+
+\opening{Sehr geehrte Anrede,}
+
+diese Vorlage basiert auf der \texttt{huletter} Klasse. Sie erlaubt das Schreiben von Briefen im Corporate Design der Humboldt-Universität zu Berlin mit \LaTeX\ und kann in \texttt{hulabels} personalisiert werden.
+
+Einige Funktionen werden aus der generischen \texttt{humain} Klasse übernommen; siehe die dortige Dokumentation für Anpassungen der Sprache und weitere benutzerspezifische Einstellungen. Eine digitale Signatur wird durch Verwendung von \verb|signature| gesetzt, ein englischsprachiger Briefkopf mittels Option \verb|english| erzeugt. In die Marginalspalte bzw.\ in die Betreffzeile können übernommen werden:
+
+\begin{description}
+  \item[\texttt{\textbackslash processor}] Bearbeiter/-in;
+  \item[\texttt{\textbackslash reference}] Geschäftszeichen;
+  \item[\texttt{\textbackslash subject}] Betreff.
+\end{description}
+
+Als leerer Ausdruck entfallen diese Angaben. Das Datum wird mit dem Standard \verb|\date| Kommando gesetzt. Ohne Angabe wird das aktuelle Tagesdatum verwendet. 
+
+\closing{Mit freundlichen Grüßen,}
+
+\end{letter}
+
+\end{document}

@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Package containing common labels and commands for HU templates
+% by Christian Kassung, ckassung@culture.hu-berlin.de.
+%
+
+\ProvidesPackage{hulabels}[2025/03/26 Labels and commands for HU templates]
+
+% Standard style for labels, small and bold
+\newcommand{\@labeltext}[1]{\sffamily\textbf{\scriptsize #1}}
+\newcommand{\@labelText}[1]{\sffamily\textbf{\footnotesize #1}}
+\newcommand{\@LabelText}[1]{\MakeUppercase{\@labeltext{#1}}}
+\newcommand{\@labelcontent}[1]{\sffamily{\scriptsize #1}}
+\newcommand{\@labelContent}[1]{\sffamily\textbf{\scriptsize #1}}
+\newcommand{\@LabelContent}[1]{\sffamily{\footnotesize #1}}
+
+% Macro to set a helpful default for any command.
+% \@DefaultVar{foo} will create a user \foo command that can set
+% an internal variable \@foo, which is defaulted to a helpful tip,
+% "Set with \foo{}".
+\newcommand{\@DefaultVar}[1]{%
+  \expandafter\def\csname @#1\endcsname{Set with \texttt{\textbackslash #1\{\}}}%
+  \expandafter\def\csname #1\endcsname{%
+    \expandafter\def\csname @#1\endcsname%
+  }%
+}
+
+% Customisation
+\newcommand*{\name}{\def\fromname}
+
+\newcommand*{\@university}{Humboldt-Universität zu Berlin}
+\newcommand*{\@facultylabel}{\GermanEnglish{Fakultät}{Faculty}}
+\newcommand*{\@faculty}{\GermanEnglish{%
+  Kultur-, Sozial- und Bildungswissenschaftliche Fakultät}{%
+  Faculty of Humanities and Social Sciences}}
+\newcommand*{\@departmentlabel}{\GermanEnglish{Institut}{Department}}
+\newcommand*{\@department}{\GermanEnglish{%
+  Institut für Kulturwissenschaft}{%
+  Department of Cultural History and Theory}}
+\newcommand*{\@professorship}{\GermanEnglish{Kulturtechniken und
+  Wissensgeschichte}{Cultural Techniques and History of Knowledge}}
+\newcommand*{\@addresslabel}{\GermanEnglish{Postanschrift}{Postal Address}}
+\newcommand*{\@address}{%
+  Humboldt-Universität zu Berlin\\
+  Unter den Linden 6\\
+  D--10099 Berlin}
+\newcommand*{\@backaddress}{%
+  Humboldt-Universität zu Berlin | Unter den Linden 6 | D--10099 Berlin}
+
+\newcommand*{\@datelabel}{\GermanEnglish{Datum}{Date}}
+\newcommand*{\@fromphonelabel}{Tel.}
+\newcommand*{\@fromphone}{\ifbool{german}{030}{+49 30} 2093-66295}
+\newcommand*{\@fromfax}{\ifbool{german}{030}{+49 30} 2093-66289}
+\newcommand*{\@fromemaillabel}{\GermanEnglish{E-Mail}{E-mail}}
+\newcommand*{\@fromemail}{CKassung@culture.hu-berlin.de}
+\newcommand*{\@fromurllabel}{Web}
+\newcommand*{\@fromurl}{https://ckassung.github.io}
+
+\newcommand*{\@fromlocallabel}{\GermanEnglish{Sitz}{Location}}
+\newcommand*{\@fromlocal}{%
+  Georgenstraße 47\\
+  Raum 4.03\\
+  D--10117 Berlin}
+\newcommand*{\@fromconnectionslabel}{\GermanEnglish{%
+  Verkehrsverbindungen}{Connections}}
+\newcommand*{\@fromconnections}{%
+  S- und U-Bahn Friedrichstraße}
+\newcommand*{\@officehourlabel}{\GermanEnglish{Sprechzeiten}{Officehour}}
+\newcommand*{\@officehour}{%
+  dienstags, 12.30--14.00 Uhr}
+\newcommand*{\@frombanklabel}{\GermanEnglish{Bankverbindung}{Bank account}}
+\newcommand*{\@frombank}{Deutsche Bank PGK AG}
+\newcommand*{\@fromibanlabel}{IBAN}
+\newcommand*{\@fromiban}{DE95\,1007\,0848\,0512\,6206\,01}
+
+% HUletter
+% \newcommand*{\@recipientlabel}{\GermanEnglish{An}{To}}
+\@DefaultVar{recipient}
+\@DefaultVar{subject}
+\newcommand*{\@processorlabel}{\GermanEnglish{Bearbeiter/-in}{Processor}}
+\@DefaultVar{processor}
+\newcommand*{\@referencelabel}{\GermanEnglish{Geschäftszeichen}{Reference}}
+\@DefaultVar{reference}
+
+% HUminutes
+\newcommand*{\@authorlabel}{Verfasser}
+\newcommand*{\@initiatorlabel}{Sitzungsleitung}
+\@DefaultVar{initiator}
+\newcommand*{\@participantlabel}{Teilnehmer}
+\newcommand*{\@participantslabel}{Teilnehmende}
+\newcommand*{\@presentlabel}{anw.}
+\newcommand*{\@absentlabel}{abw.}
+\newcommand*{\@informationlabel}{entsch.}
+
+\newcommand*{\@committeelabel}{Sitzung}
+\@DefaultVar{committee}
+\newcommand*{\@classificationlabel}{Status}
+\@DefaultVar{wheremeeting}
+\@DefaultVar{whenmeeting}
+
+\newcommand*{\@tasklistlabel}{TODOs}
+\newcommand*{\@tasknumberlabel}{\#}
+\newcommand*{\@tasklabel}{Aufgabe}
+\newcommand*{\@responsiblelabel}{Zuständig}
+\newcommand*{\@duelabel}{Frist}
+
+% HUcourse
+\newcommand{\moodleid}[1]{\def\moodleid{#1}}
+\newcommand{\moodlekey}[1]{\def\moodlekey{#1}}
+\newcommand{\coursebegin}[1]{\def\coursebegin{#1}}

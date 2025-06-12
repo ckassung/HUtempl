@@ -1,0 +1,54 @@
+\documentclass[header,internal]{huminutes}
+
+\title{%
+  Abschlußsitzung}
+\committee{%
+  Wichtige Kommission}
+\author{%
+  Prof.\,Dr.\ Christian Kassung}
+\date{%
+  1.3.1999}
+\whenmeeting{%
+  30.\ April 2025}
+\wheremeeting{%
+  per Zoom}
+
+\initiator{Prof.\,Dr.\ Christian Kassung}
+\participant[present]{\LaTeX\ Benutzer}
+\participant[information]{HU Angehörige}
+\participant[absent]{Word Benutzer}
+
+
+
+\begin{document}
+\frontmatter
+
+
+\section{Vorbereitung der \LaTeX\ Klasse für Protokolle}
+
+Dies ist die \texttt{huminutes} Klasse. Diese Vorlage erlaubt das Schreiben von Protokollen entsprechend der Corporate Identity der Humboldt-Universtiät zu Berlin mit \LaTeX. Die Klasse übernimmt Funktionen aus der generischen \texttt{humain} Klasse; siehe die dortige Dokumentation für Anpassungen der Sprache und weitere benutzerspezifische Einstellungen.
+
+Titel, Author und Datum werden mit den normalen \LaTeX\ Komandos \verb|\title|, \verb|\author| und \verb|\date| gesetzt. Weitere Optionen sind selbsterklärend und geben als Defaultwert die Information \texttt{set with \textbackslash command} über den Ausdruck an.
+
+Die Sitzungsleitung \verb|\initiator| erscheint automatisch zuoberst in der Teilnehmerliste als anwesend. Weitere Teilnehmer können in der Präambel mit dem \verb|\participant| Kommando hinzugefügt werden, dem \emph{eines} der folgenden optionalen Argumente übergeben werden kann: \verb|present|, \verb|absent| und \verb|information|. Zum Beispiel:
+
+\begin{verbatim}
+  \participant[present]{\LaTeX\ users}
+\end{verbatim}
+
+
+\section{Sitzung abhalten}
+
+
+\section{Protokoll schreiben}
+
+Abschließend kann eine TODO-Liste über \verb|\tasklist| generiert werden:
+
+\task{\LaTeX\ erlernen}{Word Benutzer}{ASAP}
+\task{Diese Vorlage ausprobieren}{\TeX perts}{Jederzeit}
+\task{Sich freuen}{\LaTeX\ Benutzer}{Ab jetzt}
+\tasklist
+
+\section{Kompilieren}
+
+\end{document}

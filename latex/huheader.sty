@@ -1,0 +1,24 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Package for header in HU documents with LaTeX.
+% by Christian Kassung, ckassung@culture.hu-berlin.de.
+%
+
+\ProvidesPackage{huheader}[2025/04/13 Set header for HU documents]
+
+\newcommand{\header}{\ifbool{header}{% If SET, add header:
+  \begin{flushleft}\sffamily%
+    {\bfseries \href{mailto:\@fromemail}%
+     {\@author}}\\[.8ex]
+    \scriptsize 
+    \@university\\
+    \@department\\[1.2ex]
+    \@fromlocal\\[.8ex]
+    \@fromphonelabel: \@fromphone\\[.8ex]
+    \@fromemaillabel: \texttt{\@fromemail}\\
+    \@fromurllabel: \texttt{\@fromurl}\\[.8ex]
+    \@datelabel: \@date
+  \end{flushleft}
+  \vspace{4ex}%
+  }{}
+}
