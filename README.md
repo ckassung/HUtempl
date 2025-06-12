@@ -10,7 +10,7 @@
 
 [![Maintainers](https://img.shields.io/badge/maintainers-1-success.svg)](#maintainers)
 
-[![GitHub license](https://img.shields.io/github/license/ckassung/hutempl?color=blue)](https://ckassung.github.io/hutempl/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/ckassung/hutempl?color=blue)](https://github.com/ckassung/hutempl/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/ckassung/hutempl)](https://ckassung.github.io/hutempl)
 
 </div>
