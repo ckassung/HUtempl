@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Preview](preview/hutempl.png)](https://ckassung.github.io/hutempl/)
+[![Preview](preview/hutempl.png)](https://github.com/ckassung/hutempl/blob/main/README.md)
 
 **A package of LaTeX templates in line with the corporate design of [HU Berlin](https://www.hu-berlin.de).**
 
