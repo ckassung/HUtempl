@@ -11,7 +11,7 @@
 [![Maintainers](https://img.shields.io/badge/maintainers-1-success.svg)](#maintainers)
 
 [![GitHub license](https://img.shields.io/github/license/ckassung/hutempl?color=blue)](https://github.com/ckassung/hutempl/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/ckassung/hutempl)](https://ckassung.github.io/hutempl)
+[![GitHub stars](https://img.shields.io/github/stars/ckassung/hutempl)](https://github.com/ckassung/hutempl)
 
 </div>
 
@@ -21,7 +21,7 @@ Why writing letters with LaTeX? 1st reason: Focussing on the content is impossib
 
 ## Installing
 
-For installation you either need a local LaTeX installation or use Overleaf.
+For installation you either need a local LaTeX installation or use Overleaf. For the use with Overleaf, you have to clone this 
 
 ## Customizing
 
