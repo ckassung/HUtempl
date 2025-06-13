@@ -17,17 +17,25 @@
 
 ## Getting started
 
-Why writing letters with LaTeX? 1st reason: Focussing on the content is impossible with Word and Word clones. 2nd reason: You can easily write collaboratively by using this template with Overleaf.
+Why writing letters and minutes with LaTeX? 1st reason: Focussing on the content is impossible with Word and Word clones. 2nd reason: You can easily write collaboratively by using this template with Overleaf. 3rd reason: You do not have to worry about design issues.
 
 ## Installing
 
-For installation you either need a local LaTeX installation or use Overleaf. For the use with Overleaf, you have to download this repository as a zip file to your computer via `Code | Download ZIP` and than create a `New Project` within Overleaf by `Upload Project | Select a .zip file`. For local use, just download and unzip the project's repository.
+### Local Setup
+
+For local installation you will either need a running [LaTeX environment](https://www.latex-project.org/get/) or use [Overleaf](https://www.overleaf.com/). For the use with Overleaf, you have to download this repository as a zip file to your computer via `Code | Download ZIP` and than create a `New Project` within Overleaf by `Upload Project | Select a .zip file`. For local use, just download and unzip the project's repository.
+
+### Git/Overleaf Synchronisation
+
+It is possible to treat an Overleaf project as a remote Git repository. [Overleaf's Git integration](https://www.overleaf.com/learn/how-to/Git_integration) allows you to work on your project locally and synchronise local or remote changes.
 
 ## Customizing
 
 For customization change all personal information in `latex/hulabels.sty`.
 
 ## Features
+
+The HUtempl class is primarily written for documents in German. Nevertheless, you can easily change the language to English by using `english` as class option.
 
 ### Maintainers
 
@@ -43,8 +51,6 @@ So far, there is only one maintainer. If you are interested, please reach out!
     </tr>
   </tbody>
 </table>
-
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
