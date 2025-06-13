@@ -21,11 +21,11 @@ Why writing letters with LaTeX? 1st reason: Focussing on the content is impossib
 
 ## Installing
 
-For installation you either need a local LaTeX installation or use Overleaf. For the use with Overleaf, you have to clone this 
+For installation you either need a local LaTeX installation or use Overleaf. For the use with Overleaf, you have to download this repository as a zip file to your computer via `Code | Download ZIP` and than create a `New Project` within Overleaf by `Upload Project | Select a .zip file`. For local use, just download and unzip the project's repository.
 
 ## Customizing
 
-For customization change all personal information in latex/hulabels.sty.
+For customization change all personal information in `latex/hulabels.sty`.
 
 ## Features
 
