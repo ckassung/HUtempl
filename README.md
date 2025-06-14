@@ -35,7 +35,7 @@ For customization change all personal information in `latex/hulabels.sty`.
 
 ## Features
 
-The HUtempl class is primarily written for documents in German. Nevertheless, you can easily change the language to English by using `english` as class option.
+The HUtempl class is primarily written for documents in German. Nevertheless, you can easily change the language to English by using `english` as class option. `print` vs. `screen` option changes between CMYK and RGB colors.
 
 ### Maintainers
 
